@@ -15,10 +15,10 @@
               black: '#111111',
               deep: '#1A1A1A',
               panel: '#FFFFFF',
-              panel2: '#FFF8F8',
-              red: '#B3122D',
-              red2: '#D94A5A',
-              red3: '#7D0D1D',
+              panel2: '#FFFCFC',
+              red: '#8B1026',
+              red2: '#A61A33',
+              red3: '#5F0A18',
               gold: '#B68A2E',
               gold2: '#D8B65E',
               gold3: '#8A6A12',
@@ -28,8 +28,8 @@
           },
           boxShadow: {
             soft: '0 10px 30px rgba(0,0,0,0.10)',
-            luxe: '0 20px 70px rgba(179,18,45,0.14)',
-            glow: '0 0 0 1px rgba(179,18,45,0.12), 0 20px 70px rgba(0,0,0,0.10)'
+            luxe: '0 20px 70px rgba(139,16,38,0.14)',
+            glow: '0 0 0 1px rgba(139,16,38,0.10), 0 20px 70px rgba(0,0,0,0.10)'
           },
           letterSpacing: {
             wider2: '0.18em'
@@ -42,9 +42,9 @@
     html { scroll-behavior: smooth; }
     body {
       background:
-        radial-gradient(circle at top left, rgba(179,18,45,0.08), transparent 24%),
-        radial-gradient(circle at bottom right, rgba(214,74,90,0.08), transparent 20%),
-        linear-gradient(180deg, #ffffff 0%, #fff9f9 100%);
+        radial-gradient(circle at top left, rgba(139,16,38,0.05), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(95,10,24,0.05), transparent 20%),
+        linear-gradient(180deg, #ffffff 0%, #fffdfd 100%);
     }
     .glass {
       background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.55));
@@ -62,7 +62,7 @@
       inset: 0;
       border-radius: inherit;
       padding: 1px;
-      background: linear-gradient(135deg, rgba(182,138,46,0.70), rgba(179,18,45,0.18), rgba(182,138,46,0.30));
+      background: linear-gradient(135deg, rgba(182,138,46,0.70), rgba(139,16,38,0.16), rgba(182,138,46,0.28));
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
@@ -70,13 +70,14 @@
     }
     .hero-grid {
       background:
-        linear-gradient(135deg, rgba(179,18,45,0.08), transparent 35%),
+        linear-gradient(135deg, rgba(139,16,38,0.05), transparent 35%),
         radial-gradient(circle at 75% 20%, rgba(255,255,255,0.8), transparent 18%),
         linear-gradient(180deg, rgba(255,255,255,0.60), rgba(255,255,255,0.00));
     }
     .section-kicker {
       letter-spacing: 0.22em;
       text-transform: uppercase;
+      color: #8B1026;
     }
     .card-hover {
       transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease, background .28s ease;
@@ -84,10 +85,10 @@
     .card-hover:hover {
       transform: translateY(-4px);
       box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-      border-color: rgba(179,18,45,0.35);
+      border-color: rgba(139,16,38,0.28);
     }
     .nav-blur {
-      background: rgba(255,255,255,0.82);
+      background: rgba(255,255,255,0.86);
       backdrop-filter: blur(18px);
     }
   </style>
@@ -150,7 +151,7 @@
       <div class="relative mx-auto w-full max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <h1 class="text-4xl md:text-6xl font-semibold leading-[1.05] text-brand-black">
-            Cinematic <span style="color: #b3122d;">red carpet</span> experiences
+            Cinematic <span style="color: #8b1026;">red carpet</span> experiences
             <span class="text-brand-gold block">powered by robotics.</span>
           </h1>
 
@@ -189,9 +190,9 @@
     <section id="opportunity" class="border-b border-brand-red/10 py-16 lg:py-24 bg-brand-panel2">
       <div class="mx-auto max-w-[1360px] px-4 lg:px-6">
         <div class="max-w-3xl">
-          <div class="section-kicker text-sm font-medium text-brand-gold">The Opportunity</div>
+          <div class="section-kicker text-sm font-medium text-brand-red">The Opportunity</div>
           <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">
-            Premium events now demand more than execution.
+            Premium events now demand <span style="color:#8B1026">more than execution.</span>
           </h2>
           <p class="mt-4 max-w-2xl text-brand-black/70 leading-7">
             Glambot Africa answers the modern expectation of premium guests, culturally relevant brands, and unforgettable event experiences with one integrated activation.
@@ -223,8 +224,8 @@
       <div class="mx-auto max-w-[1360px] px-4 lg:px-6">
         <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl">
-            <div class="section-kicker text-sm font-medium text-brand-gold">What We Deliver</div>
-            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">Five value streams built for premium events.</h2>
+            <div class="section-kicker text-sm font-medium text-brand-red">What We Deliver</div>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl"><span style="color:#8B1026">Five value streams</span> built for premium events.</h2>
           </div>
           <a href="https://wa.me/2348105244687?text=Hello%20Glambot%20Africa,%20please%20share%20your%20partnership%20details." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-brand-red/25 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-red transition hover:border-brand-red hover:text-brand-black">
             Request Partnership Deck
@@ -236,7 +237,7 @@
             <div class="flex items-start justify-between gap-4">
               <div>
                 <div class="text-xs uppercase tracking-[0.26em] text-brand-red">01</div>
-                <h3 class="mt-2 text-2xl font-semibold text-brand-gold">Hollywood-Level Red Carpet Experience</h3>
+                <h3 class="mt-2 text-2xl font-semibold text-brand-red">Hollywood-Level Red Carpet Experience</h3>
               </div>
               <div class="rounded-full border border-brand-red/20 bg-brand-red/8 px-3 py-1 text-xs uppercase tracking-[0.22em] text-brand-red">Hero Activation</div>
             </div>
@@ -245,25 +246,25 @@
 
           <article class="card-hover gold-border rounded-[1.75rem] bg-white p-6 shadow-soft">
             <div class="text-xs uppercase tracking-[0.26em] text-brand-red">02</div>
-            <h3 class="mt-2 text-2xl font-semibold text-brand-gold">Instant Social Buzz</h3>
+            <h3 class="mt-2 text-2xl font-semibold text-brand-red">Instant Social Buzz</h3>
             <p class="mt-4 text-sm leading-6 text-brand-black/70">Guests naturally post online across Instagram, TikTok, and X, expanding event reach organically.</p>
           </article>
 
           <article class="card-hover gold-border rounded-[1.75rem] bg-white p-6 shadow-soft">
             <div class="text-xs uppercase tracking-[0.26em] text-brand-red">03</div>
-            <h3 class="mt-2 text-2xl font-semibold text-brand-gold">Prestige Differentiation</h3>
+            <h3 class="mt-2 text-2xl font-semibold text-brand-red">Prestige Differentiation</h3>
             <p class="mt-4 text-sm leading-6 text-brand-black/70">Your event becomes known as the one with the experience everyone talks about.</p>
           </article>
 
           <article class="card-hover gold-border rounded-[1.75rem] bg-white p-6 shadow-soft">
             <div class="text-xs uppercase tracking-[0.26em] text-brand-red">04</div>
-            <h3 class="mt-2 text-2xl font-semibold text-brand-gold">Premium Sponsor Integration</h3>
+            <h3 class="mt-2 text-2xl font-semibold text-brand-red">Premium Sponsor Integration</h3>
             <p class="mt-4 text-sm leading-6 text-brand-black/70">Backdrops, product placement, and logo integration create high-visibility branded content.</p>
           </article>
 
           <article class="card-hover gold-border rounded-[1.75rem] bg-white p-6 shadow-soft xl:col-span-2">
             <div class="text-xs uppercase tracking-[0.26em] text-brand-red">05</div>
-            <h3 class="mt-2 text-2xl font-semibold text-brand-gold">Content Asset for Event Marketing</h3>
+            <h3 class="mt-2 text-2xl font-semibold text-brand-red">Content Asset for Event Marketing</h3>
             <p class="mt-4 max-w-2xl text-sm leading-6 text-brand-black/70">We provide polished content for post-event promotion, sponsor reporting, future ticket sales, and brand building across channels.</p>
           </article>
         </div>
@@ -274,12 +275,12 @@
     <section id="partnership" class="border-b border-brand-red/10 py-16 lg:py-24 bg-brand-panel2">
       <div class="mx-auto max-w-[1360px] px-4 lg:px-6">
         <div class="max-w-3xl">
-          <div class="section-kicker text-sm font-medium text-brand-gold">
+          <div class="section-kicker text-sm font-medium text-brand-red">
             Featured Experiences
           </div>
 
           <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">
-            Real moments captured through cinematic robotic motion.
+            Real moments captured through <span style="color:#8B1026">cinematic robotic motion.</span>
           </h2>
 
           <p class="mt-4 text-brand-black/70 leading-7">
@@ -288,32 +289,29 @@
         </div>
 
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
+            <video class="h-full w-full object-cover object-top" autoplay muted loop playsinline>
+              <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855524/vid1_jw7rjj.mp4" type="video/mp4" />
+            </video>
+          </div>
 
-        <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
-          <video class="h-full w-full object-cover object-top" autoplay muted loop playsinline>
-            <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855524/vid1_jw7rjj.mp4" type="video/mp4" />
-          </video>
-        </div>
+          <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
+            <video class="h-full w-full object-cover object-top" autoplay muted loop playsinline>
+              <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855529/vid2_ogshay.mp4" type="video/mp4" />
+            </video>
+          </div>
 
-        <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
-          <video class="h-full w-full object-cover object-top" autoplay muted loop playsinline>
-            <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855529/vid2_ogshay.mp4" type="video/mp4" />
-          </video>
-        </div>
+          <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
+            <video class="h-full w-full object-cover object-top" autoplay muted loop playsinline>
+              <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855543/vid3_dvcbfj.mp4" type="video/mp4" />
+            </video>
+          </div>
 
-        <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
-          <video class="h-full w-full object-cover object-top" autoplay muted loop playsinline>
-            <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855543/vid3_dvcbfj.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
-          <video class="h-full w-full object-cover" autoplay muted loop playsinline>
-            <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855522/vid4_nys9mz.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-      </div>
+          <div class="relative overflow-hidden rounded-tl-[2.25rem] rounded-br-[2.25rem] border border-brand-red/10 bg-white shadow-luxe h-[55vh] lg:h-[85vh]">
+            <video class="h-full w-full object-cover" autoplay muted loop playsinline>
+              <source src="https://res.cloudinary.com/dxofep2ep/video/upload/v1778855522/vid4_nys9mz.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </section>
@@ -322,19 +320,19 @@
     <section class="border-b border-brand-red/10 py-16 lg:py-24">
       <div class="mx-auto max-w-[1360px] px-4 lg:px-6">
         <div class="max-w-3xl">
-          <div class="section-kicker text-sm font-medium text-brand-gold">Ideal Events</div>
-          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">Where guest arrival becomes part of the spectacle.</h2>
+          <div class="section-kicker text-sm font-medium text-brand-red">Ideal Events</div>
+          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">Where <span style="color:#8B1026">guest arrival</span> becomes part of the spectacle.</h2>
         </div>
 
         <div class="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">Luxury Weddings</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">High-profile nuptials where arrivals set the tone.</p></div>
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">Award Ceremonies</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Industry honors requiring red carpet gravitas.</p></div>
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">Fashion Shows</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Runway events where arrival is part of the spectacle.</p></div>
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">Corporate Launches</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Premium brand moments demanding attention.</p></div>
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">High Society Birthdays</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Elite milestone celebrations where exclusivity matters.</p></div>
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">Brand Activations</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Luxury experiences requiring strong wow-factor.</p></div>
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">Music & Entertainment</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Concerts, album launches, and entertainment galas.</p></div>
-          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-gold">Government / Diplomatic</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Official functions requiring protocol and prestige.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">Luxury Weddings</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">High-profile nuptials where arrivals set the tone.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">Award Ceremonies</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Industry honors requiring red carpet gravitas.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">Fashion Shows</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Runway events where arrival is part of the spectacle.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">Corporate Launches</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Premium brand moments demanding attention.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">High Society Birthdays</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Elite milestone celebrations where exclusivity matters.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">Brand Activations</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Luxury experiences requiring strong wow-factor.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">Music & Entertainment</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Concerts, album launches, and entertainment galas.</p></div>
+          <div class="rounded-[1.5rem] border border-brand-red/10 bg-white p-5 shadow-soft card-hover"><h3 class="text-xl font-semibold text-brand-red">Government / Diplomatic</h3><p class="mt-2 text-sm leading-6 text-brand-black/70">Official functions requiring protocol and prestige.</p></div>
         </div>
       </div>
     </section>
@@ -343,9 +341,9 @@
     <section class="border-b border-brand-red/10 py-16 lg:py-24 bg-brand-panel2">
       <div class="mx-auto max-w-[1360px] px-4 lg:px-6">
         <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div class="rounded-[2rem] border border-brand-red/18 bg-[linear-gradient(135deg,rgba(179,18,45,0.08),rgba(255,255,255,0.96))] p-7 shadow-luxe">
-            <div class="section-kicker text-sm font-medium text-brand-gold">Our Positioning</div>
-            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">We are not bringing a camera. We are bringing status.</h2>
+          <div class="rounded-[2rem] border border-brand-red/18 bg-[linear-gradient(135deg,rgba(139,16,38,0.06),rgba(255,255,255,0.96))] p-7 shadow-luxe">
+            <div class="section-kicker text-sm font-medium text-brand-red">Our Positioning</div>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">We are not bringing a camera. <span style="color:#8B1026">We are bringing status.</span></h2>
             <p class="mt-5 text-brand-black/70 leading-7">Attention, excitement, and viral moments turn the event into a cultural moment. Guests become content creators. Hosts become innovators.</p>
           </div>
 
@@ -397,7 +395,7 @@
           </div>
 
           <h2 class="mt-2 text-2xl lg:text-4xl font-semibold text-brand-gold leading-tight">
-            Co-founder, Glambot Africa.
+            Co-founder, <span style="color:#8B1026">Glambot Africa.</span>
           </h2>
 
           <p class="mt-4 text-brand-black/70 leading-6 max-w-xl text-sm lg:text-base">
@@ -427,11 +425,11 @@
     <!-- Contact -->
     <section id="contact" class="py-16 lg:py-24">
       <div class="mx-auto max-w-[1360px] px-4 lg:px-6">
-        <div class="rounded-[2rem] border border-brand-red/18 bg-[linear-gradient(135deg,rgba(179,18,45,0.08),rgba(255,255,255,0.98))] p-7 shadow-luxe lg:p-10">
+        <div class="rounded-[2rem] border border-brand-red/18 bg-[linear-gradient(135deg,rgba(139,16,38,0.06),rgba(255,255,255,0.98))] p-7 shadow-luxe lg:p-10">
           <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div>
-              <div class="section-kicker text-sm font-medium text-brand-gold">Let’s Connect</div>
-              <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">Ready to elevate your next event?</h2>
+              <div class="section-kicker text-sm font-medium text-brand-red">Let’s Connect</div>
+              <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-gold lg:text-6xl">Ready to <span style="color:#8B1026">elevate your next event?</span></h2>
               <p class="mt-4 max-w-2xl text-brand-black/70 leading-7">Reach out for a personalized consultation, a live demo, or a partnership discussion. We’ll show you how Glambot Africa transforms premium events into unforgettable moments.</p>
 
               <div class="mt-8 flex flex-col gap-3 sm:flex-row">
