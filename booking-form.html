@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Glambot Africa</title>
+  <meta name="description" content="Book Glambot Africa for luxury weddings, corporate events, red carpet experiences, and cinematic event motion." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#111111',
+              deep: '#1A1A1A',
+              panel: '#FFFFFF',
+              panel2: '#FFFCFC',
+              red: '#FF0000',
+              red2: '#E60000',
+              red3: '#B30000',
+              gold: '#B68A2E',
+              gold2: '#D8B65E',
+              gold3: '#8A6A12',
+              text: '#111111',
+              muted: '#4B4B4B'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.10)',
+            luxe: '0 20px 70px rgba(255,0,0,0.12)',
+            glow: '0 0 0 1px rgba(255,0,0,0.10), 0 20px 70px rgba(0,0,0,0.10)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(255,0,0,0.05), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(179,0,0,0.05), transparent 20%),
+        linear-gradient(180deg, #ffffff 0%, #fffdfd 100%);
+    }
+    .section-kicker {
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #FF0000;
+    }
+    .gold-border {
+      position: relative;
+    }
+    .gold-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(182,138,46,0.70), rgba(255,0,0,0.16), rgba(182,138,46,0.28));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="text-brand-text antialiased selection:bg-brand-red selection:text-white">
+
+  <main class="min-h-screen">
+    <section id="booking" class="py-16 lg:py-24 bg-brand-panel2 border-b border-brand-red/10">
+      <div class="mx-auto max-w-[1200px] px-4 lg:px-6">
+
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="section-kicker text-sm font-medium">
+            Reserve Your Experience
+          </div>
+
+          <h1 class="mt-3 text-3xl lg:text-6xl font-semibold tracking-tight text-brand-gold leading-tight">
+            Book your
+            <span class="text-brand-red">Glambot experience.</span>
+          </h1>
+
+          <p class="mt-5 text-brand-black/70 leading-7 max-w-2xl mx-auto">
+            Tell us about your event and preferred experience. Our team will review your request and contact you with availability, pricing, and setup details.
+          </p>
+        </div>
+
+        <div class="mt-14 rounded-[2rem] border border-brand-red/10 bg-white shadow-luxe overflow-hidden">
+          <div class="grid lg:grid-cols-[0.42fr_0.58fr]">
+
+            <div class="bg-brand-red text-white p-8 lg:p-10">
+              <div class="text-xs uppercase tracking-[0.25em] text-white/70">
+                Booking Information
+              </div>
+
+              <h2 class="mt-4 text-3xl font-semibold leading-tight">
+                Let's create a cinematic event experience.
+              </h2>
+
+              <p class="mt-5 text-white/80 leading-7 text-sm">
+                Whether you're planning a luxury wedding, corporate launch, gala, birthday, fashion show, or red carpet event, Glambot Africa delivers unforgettable cinematic guest moments.
+              </p>
+
+              <div class="mt-10 space-y-6 text-sm">
+                <div>
+                  <div class="uppercase tracking-[0.2em] text-white/60 text-xs">
+                    WhatsApp
+                  </div>
+                  <a href="https://wa.me/2348105244687"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="mt-2 inline-block font-semibold text-lg hover:text-white/80 transition">
+                    +234 810 524 4687
+                  </a>
+                </div>
+
+                <div>
+                  <div class="uppercase tracking-[0.2em] text-white/60 text-xs">
+                    Instagram
+                  </div>
+                  <a href="https://www.instagram.com/glambot_africa/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="mt-2 inline-block font-semibold text-lg hover:text-white/80 transition">
+                    @glambot_africa
+                  </a>
+                </div>
+
+                <div>
+                  <div class="uppercase tracking-[0.2em] text-white/60 text-xs">
+                    Response Time
+                  </div>
+                  <div class="mt-2 font-semibold text-lg">
+                    Within 24 Hours
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-8 lg:p-10">
+              <form action="https://formspree.io/f/mvzleykl" method="POST" class="space-y-8">
+
+                <div>
+                  <div class="section-kicker text-xs font-medium mb-5">
+                    Contact Details
+                  </div>
+
+                  <div class="grid md:grid-cols-2 gap-5">
+                    <div>
+                      <label for="fullName" class="block text-sm font-medium text-brand-black mb-2">
+                        Full Name
+                      </label>
+                      <input
+                        id="fullName"
+                        type="text"
+                        name="Full Name"
+                        required
+                        placeholder="Enter your full name"
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="phone" class="block text-sm font-medium text-brand-black mb-2">
+                        Phone Number
+                      </label>
+                      <input
+                        id="phone"
+                        type="tel"
+                        name="Phone Number"
+                        required
+                        placeholder="+234..."
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="email" class="block text-sm font-medium text-brand-black mb-2">
+                        Email Address
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        name="Email"
+                        required
+                        placeholder="example@email.com"
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="company" class="block text-sm font-medium text-brand-black mb-2">
+                        Company / Brand (Optional)
+                      </label>
+                      <input
+                        id="company"
+                        type="text"
+                        name="Company / Brand"
+                        placeholder="Company or brand name"
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="section-kicker text-xs font-medium mb-5">
+                    What Are You Booking For?
+                  </div>
+
+                  <div class="grid md:grid-cols-2 gap-5">
+                    <div>
+                      <label for="eventType" class="block text-sm font-medium text-brand-black mb-2">
+                        Event Type
+                      </label>
+                      <select
+                        id="eventType"
+                        name="Event Type"
+                        required
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition bg-white">
+                        <option value="">Select event type</option>
+                        <option>Luxury Wedding</option>
+                        <option>Birthday Party</option>
+                        <option>Corporate Event</option>
+                        <option>Award Ceremony</option>
+                        <option>Fashion Show</option>
+                        <option>Brand Activation</option>
+                        <option>Concert / Entertainment</option>
+                        <option>Private Event</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="eventDate" class="block text-sm font-medium text-brand-black mb-2">
+                        Event Date
+                      </label>
+                      <input
+                        id="eventDate"
+                        type="date"
+                        name="Event Date"
+                        required
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="location" class="block text-sm font-medium text-brand-black mb-2">
+                        Event Location
+                      </label>
+                      <input
+                        id="location"
+                        type="text"
+                        name="Event Location"
+                        required
+                        placeholder="Abuja, Lagos, etc."
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="guests" class="block text-sm font-medium text-brand-black mb-2">
+                        Estimated Guests
+                      </label>
+                      <input
+                        id="guests"
+                        type="number"
+                        name="Estimated Guests"
+                        placeholder="200"
+                        class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="details" class="block text-sm font-medium text-brand-black mb-2">
+                    Additional Details
+                  </label>
+                  <textarea
+                    id="details"
+                    name="Additional Details"
+                    rows="6"
+                    required
+                    placeholder="Tell us more about your event, preferred setup, theme, venue, or special requests."
+                    class="w-full rounded-2xl border border-brand-red/15 px-5 py-4 outline-none focus:border-brand-red transition resize-none"></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="New Glambot Africa Booking Request" />
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                  <button
+                    type="submit"
+                    class="inline-flex items-center justify-center rounded-full bg-brand-red px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-luxe transition hover:bg-brand-red2">
+                    Submit Booking
+                  </button>
+
+                  <a
+                    href="https://wa.me/2348105244687?text=Hello%20Glambot%20Africa,%20I%20want%20to%20book%20an%20experience."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full border border-brand-red/20 px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-brand-red transition hover:border-brand-red hover:text-brand-black">
+                    Chat on WhatsApp
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
